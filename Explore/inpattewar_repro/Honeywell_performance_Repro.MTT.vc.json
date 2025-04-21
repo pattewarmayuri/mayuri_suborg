@@ -1,0 +1,266 @@
+{
+  "name" : "Honeywell_performance_Repro",
+  "runtimeEnvironmentId" : "@hy4dsBPVoc1ka1IUhurO6B",
+  "runtimeEnvironmentName" : "invfeb202501.informatica.com",
+  "maxLogs" : 10,
+  "parameters" : [
+    {
+      "name" : "$Source$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "Source",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "originalPath" : "Source"
+      },
+      "sourceConnectionId" : "@9ZWQ0yXuiEgi3XBHAjVw8c",
+      "connectionName" : "inpattewar_Linux_FF",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "srcFFAttrs" : {
+        "delimiter" : ",",
+        "textQualifier" : "\"",
+        "headerLineNo" : 1,
+        "firstDataRow" : 2,
+        "rowDelimiter" : 0,
+        "consecutiveDelimiter" : false,
+        "multiDelimitersAsAnd" : true,
+        "firstDataRowAsHeader" : false
+      },
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "Honeywell_repro/SFDC_HBT_SOURCE_SYSTEM_EXTRACT_ff",
+          "label" : "Honeywell_repro/SFDC_HBT_SOURCE_SYSTEM_EXTRACT_ff",
+          "metadataUpdated" : false
+        },
+        "singleMode" : true,
+        "objects" : [
+          {
+            "name" : "Honeywell_repro/SFDC_HBT_SOURCE_SYSTEM_EXTRACT_ff",
+            "label" : "Honeywell_repro/SFDC_HBT_SOURCE_SYSTEM_EXTRACT_ff",
+            "metadataUpdated" : false
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "unspecified" : false,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "fileList" : false
+    },
+    {
+      "name" : "$Source2$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "Source2",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "originalPath" : "Source2"
+      },
+      "sourceConnectionId" : "@9ZWQ0yXuiEgi3XBHAjVw8c",
+      "connectionName" : "inpattewar_Linux_FF",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "srcFFAttrs" : {
+        "delimiter" : ",",
+        "textQualifier" : "\"",
+        "headerLineNo" : 1,
+        "firstDataRow" : 2,
+        "rowDelimiter" : 0,
+        "consecutiveDelimiter" : false,
+        "multiDelimitersAsAnd" : true,
+        "firstDataRowAsHeader" : false
+      },
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "Honeywell_repro/SFDC_HBT_BIN_EXTRACT_ff_second_source",
+          "label" : "Honeywell_repro/SFDC_HBT_BIN_EXTRACT_ff_second_source",
+          "metadataUpdated" : false
+        },
+        "singleMode" : true,
+        "objects" : [
+          {
+            "name" : "Honeywell_repro/SFDC_HBT_BIN_EXTRACT_ff_second_source",
+            "label" : "Honeywell_repro/SFDC_HBT_BIN_EXTRACT_ff_second_source",
+            "metadataUpdated" : false
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "unspecified" : false,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "fileList" : false
+    },
+    {
+      "name" : "$Target$",
+      "type" : "TARGET",
+      "label" : "Target",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "flags" : "SUPPORTS_MULTI_SCHEMA",
+        "supportApplyDDLChanges" : "false",
+        "originalPath" : "Target"
+      },
+      "targetConnectionId" : "@atYL2JvO0qfkekuxva5oYB",
+      "connectionName" : "inpattewar_oracle_INGKDBORA19C",
+      "targetObject" : "STG_SFDC_MDH_HBT_SOURCE_SYSTEM_EXTRACT",
+      "targetObjectLabel" : "STG_SFDC_MDH_HBT_SOURCE_SYSTEM_EXTRACT",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : true,
+      "bulkApiDBTarget" : true,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "STG_SFDC_MDH_HBT_SOURCE_SYSTEM_EXTRACT",
+      "objectLabel" : "STG_SFDC_MDH_HBT_SOURCE_SYSTEM_EXTRACT",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "unspecified" : false,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "fileList" : false
+    },
+    {
+      "name" : "$Target1$",
+      "type" : "TARGET",
+      "label" : "Target1",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "flags" : "SUPPORTS_MULTI_SCHEMA",
+        "supportApplyDDLChanges" : "false",
+        "originalPath" : "Target1"
+      },
+      "targetConnectionId" : "@atYL2JvO0qfkekuxva5oYB",
+      "connectionName" : "inpattewar_oracle_INGKDBORA19C",
+      "targetObject" : "STG_SFDC_MDH_HBT_SS_BIN_EXTRACT",
+      "targetObjectLabel" : "STG_SFDC_MDH_HBT_SS_BIN_EXTRACT",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : true,
+      "bulkApiDBTarget" : true,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "STG_SFDC_MDH_HBT_SS_BIN_EXTRACT",
+      "objectLabel" : "STG_SFDC_MDH_HBT_SS_BIN_EXTRACT",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "unspecified" : false,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "fileList" : false
+    }
+  ],
+  "verbose" : true,
+  "lastRunTime" : 1743067786000,
+  "mappingId" : "@3Gr4oYdWyGWi731tV6oYat",
+  "mappingTemplateName" : "Honeywell_Repro",
+  "sessionPropertiesList" : [
+    {
+      "name" : "Override tracing",
+      "value" : "Verbose Initialization"
+    },
+    {
+      "name" : "Pushdown Optimization",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Context",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Fallback Option",
+      "value" : "Partial PDO"
+    }
+  ],
+  "hidden" : false,
+  "enableCrossSchemaPushdown" : true,
+  "enableParallelRun" : false,
+  "autoTunedApplied" : false,
+  "autoTunedAppliedType" : "NONE",
+  "paramFileType" : "PARAM_FILE_LOCAL",
+  "schemaMode" : "async",
+  "valid" : true,
+  "optimizationPlan" : "NONE",
+  "allowMaxFieldLength" : false,
+  "midstreamPreview" : false,
+  "vcsExportTime" : "2025-04-20 23:03:57 PDT"
+}
