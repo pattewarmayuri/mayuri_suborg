@@ -1,0 +1,1255 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Lam_Research_Repro",
+    "links" : [
+      {
+        "link" : "Source -> WebServices",
+        "groupLink" : "DefaultGroup -> DefaultGroup"
+      },
+      {
+        "link" : "WebServices -> Target",
+        "groupLink" : "root -> DefaultGroup"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-03-05T06:41:56.642Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@9ZWQ0yXuiEgi3XBHAjVw8c",
+          "connectionName" : "inpattewar_Linux_FF",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "LAM RESEARCH/target.txt",
+            "label" : "LAM RESEARCH/target.txt",
+            "path" : "LAM RESEARCH/target.txt",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-03-05T06:43:29.776Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "CustomerCode"
+            },
+            "name" : "CustomerCode",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Name1"
+            },
+            "name" : "Name1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Name2"
+            },
+            "name" : "Name2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9ZWQ0yXuiEgi3XBHAjVw8c",
+          "connectionName" : "inpattewar_Linux_FF",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "LAM RESEARCH/Source_File",
+            "label" : "LAM RESEARCH/Source_File",
+            "objectName" : "Source_File",
+            "path" : "LAM RESEARCH/Source_File",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "CustomerCode",
+                "fieldType" : "CONNECTOR",
+                "label" : "CustomerCode",
+                "nativeName" : "CustomerCode",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "LAM RESEARCH/Source_File"
+                  }
+                ]
+              },
+              {
+                "name" : "Name1",
+                "fieldType" : "CONNECTOR",
+                "label" : "Name1",
+                "nativeName" : "Name1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "LAM RESEARCH/Source_File"
+                  }
+                ]
+              },
+              {
+                "name" : "Name2",
+                "fieldType" : "CONNECTOR",
+                "label" : "Name2",
+                "nativeName" : "Name2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "LAM RESEARCH/Source_File"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-03-05T06:44:17.746Z",
+        "name" : "WebServices",
+        "advancedProperties" : [
+          {
+            "name" : "requestXmlSize",
+            "value" : "100"
+          },
+          {
+            "name" : "responseXmlSize",
+            "value" : "100"
+          },
+          {
+            "name" : "inputFlush",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "FaultGroup",
+            "output" : "true"
+          },
+          {
+            "input" : "false",
+            "name" : "root",
+            "output" : "true"
+          }
+        ],
+        "operation" : "@4Jdn9P2KtAkkzAbplXzs2Z@data_API",
+        "serviceDefinitionId" : "@4Jdn9P2KtAkkzAbplXzs2Z",
+        "serviceDefinitionName" : "Lam_Research_Repro",
+        "fieldMap" : {
+          "mappings" : [
+            {
+              "groupName" : "Source",
+              "isRoot" : "false",
+              "xPath" : "/json:root",
+              "xfields" : [
+                {
+                  "name" : "CustomerCode",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:body/json:CustomerCode"
+                },
+                {
+                  "name" : "Name1",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:body/json:Name1"
+                },
+                {
+                  "name" : "Name2",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:body/json:Name2"
+                }
+              ]
+            }
+          ]
+        },
+        "outputFieldMap" : {
+          "denormalized" : "false",
+          "mappings" : [
+            {
+              "groupName" : "FaultGroup",
+              "isRoot" : "false",
+              "xPath" : "/INFA:data_API_FAULT/data_API",
+              "xfields" : [
+                {
+                  "name" : "RequestXML",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/INFA:data_API_FAULT/data_API/RequestXML"
+                },
+                {
+                  "name" : "ErrorCode",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/INFA:data_API_FAULT/data_API/ErrorCode"
+                },
+                {
+                  "name" : "ErrorMessage",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/INFA:data_API_FAULT/data_API/ErrorMessage"
+                }
+              ]
+            },
+            {
+              "groupName" : "root",
+              "isRoot" : "false",
+              "xPath" : "/json:root",
+              "xfields" : [
+                {
+                  "name" : "Accept",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:headers/json:Accept"
+                },
+                {
+                  "name" : "location",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:headers/json:location"
+                },
+                {
+                  "name" : "Accept_Language",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:headers/json:Accept-Language"
+                },
+                {
+                  "name" : "Content_Length",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:headers/json:Content-Length"
+                },
+                {
+                  "name" : "dataserviceversion",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:headers/json:dataserviceversion"
+                },
+                {
+                  "name" : "Content_Type",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:headers/json:Content-Type"
+                },
+                {
+                  "name" : "statusInfo",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:statusInfo"
+                },
+                {
+                  "name" : "contentId",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:contentId"
+                },
+                {
+                  "name" : "CreationDate",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:CreationDate"
+                },
+                {
+                  "name" : "CreatedByUser",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:CreatedByUser"
+                },
+                {
+                  "name" : "FormOfAddress",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:FormOfAddress"
+                },
+                {
+                  "name" : "Customer",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:Customer"
+                },
+                {
+                  "name" : "OrganizationBPName4",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:OrganizationBPName4"
+                },
+                {
+                  "name" : "BPDataControllerIsNotRequired",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BPDataControllerIsNotRequired"
+                },
+                {
+                  "name" : "BusinessPartner",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartner"
+                },
+                {
+                  "name" : "OrganizationBPName2",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:OrganizationBPName2"
+                },
+                {
+                  "name" : "OrganizationBPName3",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:OrganizationBPName3"
+                },
+                {
+                  "name" : "PersonFullName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:PersonFullName"
+                },
+                {
+                  "name" : "OrganizationBPName1",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:OrganizationBPName1"
+                },
+                {
+                  "name" : "NaturalPersonEmployerName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:NaturalPersonEmployerName"
+                },
+                {
+                  "name" : "Industry",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:Industry"
+                },
+                {
+                  "name" : "IsSexUnknown",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:IsSexUnknown"
+                },
+                {
+                  "name" : "BusinessPartnerType",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerType"
+                },
+                {
+                  "name" : "OrganizationLiquidationDate",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:OrganizationLiquidationDate"
+                },
+                {
+                  "name" : "LegalForm",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:LegalForm"
+                },
+                {
+                  "name" : "BusinessPartnerGrouping",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerGrouping"
+                },
+                {
+                  "name" : "NameCountry",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:NameCountry"
+                },
+                {
+                  "name" : "BusinessPartnerPrintFormat",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerPrintFormat"
+                },
+                {
+                  "name" : "Initials",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:Initials"
+                },
+                {
+                  "name" : "AcademicTitle",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:AcademicTitle"
+                },
+                {
+                  "name" : "LastChangedByUser",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:LastChangedByUser"
+                },
+                {
+                  "name" : "BusinessPartnerIDByExtSystem",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerIDByExtSystem"
+                },
+                {
+                  "name" : "IsMarkedForArchiving",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:IsMarkedForArchiving"
+                },
+                {
+                  "name" : "BusinessPartnerUUID",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerUUID"
+                },
+                {
+                  "name" : "BusinessPartnerBirthplaceName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerBirthplaceName"
+                },
+                {
+                  "name" : "ETag",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:ETag"
+                },
+                {
+                  "name" : "AuthorizationGroup",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:AuthorizationGroup"
+                },
+                {
+                  "name" : "CreationTime",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:CreationTime"
+                },
+                {
+                  "name" : "IndependentAddressID",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:IndependentAddressID"
+                },
+                {
+                  "name" : "LastNamePrefix",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:LastNamePrefix"
+                },
+                {
+                  "name" : "LastName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:LastName"
+                },
+                {
+                  "name" : "BirthDate",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BirthDate"
+                },
+                {
+                  "name" : "BusinessPartnerCategory",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerCategory"
+                },
+                {
+                  "name" : "LastNameSecondPrefix",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:LastNameSecondPrefix"
+                },
+                {
+                  "name" : "NameFormat",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:NameFormat"
+                },
+                {
+                  "name" : "CorrespondenceLanguage",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:CorrespondenceLanguage"
+                },
+                {
+                  "name" : "BusinessPartnerIsBlocked",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerIsBlocked"
+                },
+                {
+                  "name" : "BusinessPartnerFullName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerFullName"
+                },
+                {
+                  "name" : "Language",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:Language"
+                },
+                {
+                  "name" : "BusPartMaritalStatus",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusPartMaritalStatus"
+                },
+                {
+                  "name" : "LastChangeTime",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:LastChangeTime"
+                },
+                {
+                  "name" : "GroupBusinessPartnerName1",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:GroupBusinessPartnerName1"
+                },
+                {
+                  "name" : "Supplier",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:Supplier"
+                },
+                {
+                  "name" : "GroupBusinessPartnerName2",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:GroupBusinessPartnerName2"
+                },
+                {
+                  "name" : "AdditionalLastName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:AdditionalLastName"
+                },
+                {
+                  "name" : "TradingPartner",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:TradingPartner"
+                },
+                {
+                  "name" : "BusinessPartnerName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerName"
+                },
+                {
+                  "name" : "PersonNumber",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:PersonNumber"
+                },
+                {
+                  "name" : "IsFemale",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:IsFemale"
+                },
+                {
+                  "name" : "IsNaturalPerson",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:IsNaturalPerson"
+                },
+                {
+                  "name" : "BusPartNationality",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusPartNationality"
+                },
+                {
+                  "name" : "FirstName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:FirstName"
+                },
+                {
+                  "name" : "BusinessPartnerOccupation",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerOccupation"
+                },
+                {
+                  "name" : "BusinessPartnerBirthDateStatus",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerBirthDateStatus"
+                },
+                {
+                  "name" : "MiddleName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:MiddleName"
+                },
+                {
+                  "name" : "OrganizationFoundationDate",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:OrganizationFoundationDate"
+                },
+                {
+                  "name" : "BusinessPartnerSupplementName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerSupplementName"
+                },
+                {
+                  "name" : "BusinessPartnerBirthName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerBirthName"
+                },
+                {
+                  "name" : "GenderCodeName",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:GenderCodeName"
+                },
+                {
+                  "name" : "LastChangeDate",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:LastChangeDate"
+                },
+                {
+                  "name" : "InternationalLocationNumber2",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:InternationalLocationNumber2"
+                },
+                {
+                  "name" : "InternationalLocationNumber3",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:InternationalLocationNumber3"
+                },
+                {
+                  "name" : "InternationalLocationNumber1",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:InternationalLocationNumber1"
+                },
+                {
+                  "name" : "IsMale",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:IsMale"
+                },
+                {
+                  "name" : "SearchTerm2",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:SearchTerm2"
+                },
+                {
+                  "name" : "BusinessPartnerDeathDate",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:BusinessPartnerDeathDate"
+                },
+                {
+                  "name" : "SearchTerm1",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:body/json:SearchTerm1"
+                },
+                {
+                  "name" : "statusCode",
+                  "platformType" : {
+                    "name" : "string"
+                  },
+                  "precision" : 255,
+                  "scale" : 0,
+                  "foreignKey" : "false",
+                  "primaryKey" : "false",
+                  "xPath" : "/json:root/json:Response_200/json:batchChangeSetPartResponse/json:statusCode"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-22 23:01:06 PDT"
+}
